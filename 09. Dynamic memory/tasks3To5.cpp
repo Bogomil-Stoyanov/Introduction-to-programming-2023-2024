@@ -10,7 +10,10 @@ void dynamicArrayInput() {
         if (count == size) {
             int newSize = size * 2;
             int* newArr = new int[newSize];
-            std::copy(arr, arr + size, newArr);
+             for (int i = 0; i < size; ++i) {
+                newArr[i] = arr[i];
+            }
+
             delete[] arr;
             arr = newArr;
             size = newSize;
