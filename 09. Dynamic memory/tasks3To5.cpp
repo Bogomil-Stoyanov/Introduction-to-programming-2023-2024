@@ -1,10 +1,5 @@
 #include <iostream>
 
-
-#include <iostream>
-#include <vector>
-
-
 void dynamicArrayInput() {
     int size = 5;
     int* arr = new int[size];
